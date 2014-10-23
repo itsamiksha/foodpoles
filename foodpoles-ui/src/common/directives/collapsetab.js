@@ -1,12 +1,13 @@
 angular.module('directives.collapsetab', []).directive('collapsetab', function () {
     return {
         restrict: "E",
-        templateUrl: "src/common/tpls/collapsetab.tpl.html"
+        templateUrl: "/foodpoles-ui/src/common/tpls/collapsetab.tpl.html"
     };
 });
 
 
-/*(function(define){
+/*
+(function(define){
 	"use strict";
 	
 	define([], function() {
@@ -16,7 +17,7 @@ angular.module('directives.collapsetab', []).directive('collapsetab', function (
 			.directive('collapsetab', function () {
 			    return {
 			        restrict: "E",
-			        templateUrl: "app/common/collapsetab.tpl.html"
+			        templateUrl: "common/tpls/collapsetab.tpl.html"
 			    };
 			});
 		

@@ -83,7 +83,7 @@ EOT;
         <div class="navbar navbar-default navbar-static-top" style="margin-bottom: 0;">
             <div class="container-fluid" style="background-color: #e7e7e7" ng-controller="DropdownCtrl">
 
-                <div>
+
                     <div dropdown is-open="status.isopen">
                       <span class="menuBtn dropdown-toggle" ng-class="{activeMenu: status.isopen}">
                         Menu <span class="caret"></span>
@@ -99,7 +99,7 @@ EOT;
                       </ul>
                     </div>
 
-                </div>
+
 
                 <a class="navbar-brand" href="#" style="">$title</a>
 

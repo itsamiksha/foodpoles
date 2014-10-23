@@ -1,0 +1,74 @@
+<div class="container-fluid" style="border: 1px solid">
+    <accordion close-others="true">
+        <accordion-group ng-repeat="group in groups">
+            <accordion-heading>
+                <div class="row">
+                    I can have markup, too!
+                    <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                </div>
+            </accordion-heading>
+            {{group.content}}
+        </accordion-group>
+
+        <accordion-group ng-repeat="order in orderList">
+            <accordion-heading>
+                <div class="row">
+                    <div class="col-md-9" style="padding-top: 8px">
+                        <span ng-if="order.orderType==0">
+                            Table Number :
+                        </span>
+                        {{order.servingAddress}}
+                    </div>
+                    <button class="btn btn-primary col-md-1" ng-click="changeStatus($index, group, $event)"
+                            style="z-index: 999">Processing</button>
+                    <button class="btn btn-info col-md-1" ng-click="changeStatus($index, group, $event)"
+                            style="z-index: 999">Served</button>
+                    <button class="btn btn-success col-md-1" ng-click="changeStatus($index, group, $event)"
+                            style="z-index: 999">Complete</button>
+
+                </div>
+
+            </accordion-heading>
+
+            <accordion close-others="true">
+                <accordion-group ng-repeat="prt in order.part">
+                    <accordion-heading>
+                        <div class="row">
+                            <span class="col-md-9">
+                                Order {{$index+1}}
+                            </span>
+                            <button class="btn btn-small col-md-2 pull-right" ng-click="changeStatus($index, group, $event)"
+                                    style="z-index: 999">Print Ticket</button>
+                        </div>
+                    </accordion-heading>
+                    <div class="gridStyle"  ng-grid="gridOptions">
+                </accordion-group>
+            </accordion>
+
+            <!--<div class="container-fluid" ng-repeat="prt in order.part" style="border: 1px solid; ">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4>Order {{$index+1}}</h4>
+                    </div>
+                    <button class="btn btn-small col-md-2 pull-right">
+                        Print Ticket
+                    </button>
+                </div>
+                <br>
+                <div class="row" style="border: 1px solid">
+                    &lt;!&ndash;<div class="col-md-1">Sr. No.</div>
+                    <div class="col-md-2">Dish Name</div>
+                    <div class="col-md-2">Customization</div>
+                    <div class="col-md-1">Quantity</div>
+                    <div class="col-md-2">Amount</div>
+                    <div class="col-md-2">Discount</div>
+                    <div class="col-md-2">Net</div>&ndash;&gt;
+
+                    <div class="gridStyle"  ng-grid="gridOptions">
+                    </div>
+                </div>
+            </div>-->
+
+        </accordion-group>
+    </accordion>
+</div>

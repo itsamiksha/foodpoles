@@ -1,0 +1,19 @@
+Generates Navigation Tab Menu , JSON Data must be in following form :
+
+
+
+
+<div dropdown is-open="status.isopen">
+                      <span class="menuBtn dropdown-toggle" ng-class="{activeMenu: status.isopen}">
+                        Menu <span class="caret"></span>
+                      </span>
+    <ul class="dropdown-menu" role="menu">
+        <li ng-repeat="men in menu">
+                            <span class="menuList" ng-click="selectAndRedirectTo(men.name, men.url)">
+                                {{men.name}}
+                            </span>
+        </li>
+        <li class="divider"></li>
+        <li><span class="menuList"> More>> </span></li>
+    </ul>
+</div>

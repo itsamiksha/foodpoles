@@ -14,7 +14,14 @@ require 'common/header.php';
 <head>
     <title><?php echo $property->getTitle(); ?></title>
     <link type="text/css" rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" />
     <style>
+        .gridStyle {
+            border: 1px solid rgb(212,212,212);
+            width: 100%;
+            height: calc(30 * 6px + 5px);
+        }
+
         label{
             font-size: 16px;
         }
@@ -80,6 +87,10 @@ require 'common/header.php';
         .dropdown-menu{
             border-radius: 0;
         }
+        .list-group-item:first-child{
+            border-radius: 0;
+        }
+
     </style>
 
 </head>
@@ -103,10 +114,12 @@ require 'common/header.php';
 
 </footer>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="../vendor/jQuery/jquery.js"></script>
 <script type="text/javascript" src="../vendor/angular-js/angular.min.js"></script>
 <script type="text/javascript" src="../vendor/angular-js/angular-resource.min.js"></script>
 <script type="text/javascript" src="../vendor/angular-js/angular-ui-router.js"></script>
+<script type="text/javascript" src="../vendor/angular-js/ng-grid/ng-grid.js"></script>
 
 <!--for admin-- >
 <!--<script type="text/javascript" src="admin/controllers/AdminCtrl.js"></script>-->

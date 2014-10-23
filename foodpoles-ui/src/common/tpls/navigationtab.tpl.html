@@ -1,0 +1,28 @@
+
+<!--  Generates Navigation Tab Menu , JSON Data must be in following form :
+
+    $scope.collapseTabMenuList = [
+        {
+            "name":"Active Order Lists",
+            "url":"/manager-admin/order-lists/active-order-lists",
+         },
+        {
+            "name":"Home Delivery",
+            "url":""
+        },
+        {
+            "name":"All Orders",
+            "url":""
+        }
+    ];
+
+-->
+
+
+<div>
+    <a href="" style="border-radius: 0"
+       class="list-group-item" ng-click="selectAndRedirectTo(men.name, men.url)"
+       ng-repeat="men in navTabMenu" ng-class="{active: men.name == activeSelectedMenu}">
+        {{men.name}}
+    </a>
+</div>

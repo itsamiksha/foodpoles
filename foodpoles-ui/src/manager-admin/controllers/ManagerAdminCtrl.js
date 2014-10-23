@@ -2,7 +2,7 @@
  * Created by STG on 21/10/14.
  */
 
-var app = angular.module("FoodPoleApp",['ui.router','ui.bootstrap']);
+var app = angular.module("FoodPoleApp",['ui.router','ui.bootstrap','ngGrid']);
 
 app.controller('DropdownCtrl',['$scope', '$location', '$state', function ($scope, $location, $state) {
     $scope.status = {
@@ -20,7 +20,7 @@ app.controller('DropdownCtrl',['$scope', '$location', '$state', function ($scope
 
 
     $scope.menu = [
-        {'name': 'Order Lists', 'url': '/manager-admin/'},
+        {'name': 'Order Lists', 'url': '/manager-admin/order-lists'},
         {'name': 'Edit Menu', 'url': '/manager-admin/'},
         {'name': 'Misc. Settings', 'url': '/manager-admin/'}
     ];
@@ -36,6 +36,14 @@ app.controller('DropdownCtrl',['$scope', '$location', '$state', function ($scope
 
 }]);
 
+
+app.directive('navigationtab', function () {
+    return {
+        restrict: "E",
+        templateUrl: "common/tpls/navigationtab.tpl.html"
+    };
+});
+
 app.controller("ManagerAdminCtrl",['$scope', '$location', '$state', function($scope, $location, $state){
 
     $scope.redirectToNewRestaurant = function(){
@@ -43,18 +51,156 @@ app.controller("ManagerAdminCtrl",['$scope', '$location', '$state', function($sc
     }
 }]);
 
-//app.controller((""));
+app.controller("OrderListsMenuCtrl", ["$scope", "$location", "$state", function($scope, $location, $state){
+
+    $scope.navTabMenu = [
+        {
+            "name":"Active Order Lists",
+            "url":"/manager-admin/order-lists/active-order-lists"
+         },
+        {
+            "name":"Home Delivery",
+            "url":""
+        },
+        {
+            "name":"All Orders",
+            "url":""
+        }
+    ];
+
+    var activeSelectedMenu = $location.path();
+    if(activeSelectedMenu !== undefined && !(angular.equals(activeSelectedMenu, ''))){
+        angular.forEach($scope.navTabMenu, function(value, key){
+            if(activeSelectedMenu === value.url){
+                $scope.activeSelectedMenu = value.name;
+            }
+
+        });
+    }
+
+    /**
+     * Description
+     * @method selectAndRedirectTo
+     * @param {} menuName
+     * @param {} url
+     * @return
+     */
+    $scope.selectAndRedirectTo = function(name, url){
+        $scope.activeSelectedMenu = name;
+        $location.path(url);
+    }
+
+}]);
+
+app.controller("ActiveOrderListsCtrl",['$scope', '$location', '$state', function($scope, $location, $state){
+
+    $scope.orderList = [
+        {
+            "orderNo": "1234",
+            "orderType":"0",//in restaurant
+            "servingAddress": "10",
+            "status": "Processing",
+            "part": [
+                {
+                    "orderPart":[
+                        {
+                            "status": "Served",
+                            "dishName": "Daal Makhani",
+                            "customization":[
+                                {
+                                    "name":"No Onion",
+                                    "quantity":"1"
+                                },
+                                {
+                                    "name": "No Garlic",
+                                    "quantity": "1"
+                                }
+                            ],
+                            "amount": "120",
+                            "discount":""
+                        },
+                        {
+                            "status": "Served",
+                            "dishName": "Burger",
+                            "customization":[
+                                {
+                                    "name":"Regular",
+                                    "quantity":"1"
+                                }
+                            ],
+                            "amount": "130",
+                            "discount":""
+                        }
+                    ]
+                },
+                {
+                    "orderPart":[
+                        {
+                            "status": "Processing",
+                            "dishName": "Daal Makhani",
+                            "customization":[
+                                {
+                                    "name":"Regular",
+                                    "quantity":"1"
+                                }
+                            ],
+                            "amount": "120",
+                            "discount":""
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ];
+
+    $scope.myData = [
+        {srno: "1", dishName: "abc", customization:"Regular", quantity:"1", amount:"450", discount:"-", net:"450"},
+        {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
+        {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
+        {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
+        {srno: "3", dishName: "dsa", customization:"Regular", quantity:"5", amount:"450", discount:"-", net:"450"}
+    ];
+
+    $scope.gridOptions = {
+        data: 'myData',
+        columnDefs: [
+            {field: 'srno', displayName: 'Sr No.',width:'8%'},
+            {field:'dishName', displayName:'Dish Name',width:'15%'},
+            {field:'customization', displayName:'Customization',width:'15%'},
+            {field:'quantity', displayName:'Quantity',width:'15%'},
+            {field:'amount', displayName:'Amount',width:'15%'},
+            {field:'discount', displayName:'Discount',width:'15%'},
+            {field:'net', displayName:'Net',width:'15%'}
+        ]
+    };
+
+    $scope.changeStatus = function(idx, group, e) {
+        if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        console.info(group)
+    }
+
+}]);
+
+
 app.config(function($stateProvider, $urlRouterProvider) {
-    //$urlRouterProvider.otherwise("/manager-admin");
+    //$urlRouterProvider.otherwise("/manager-admin/order-lists");
     $stateProvider
         .state('manager-admin', {
             url: "/manager-admin",
             templateUrl: "manager-admin/view/manager-admin-base.tpl.html"
         })
-        .state('manager-admin.set-value', {
-            url: "/set-value",
-            templateUrl: "manager-admin/view/set-value/set-value-base.tpl.html",
-            controller: "AdminCtrl"
+        .state('manager-admin.order-lists', {
+            url: "/order-lists",
+            templateUrl: "manager-admin/view/order-lists/order-lists-base.tpl.html"
+        })
+        .state('manager-admin.order-lists.active-order-lists', {
+            url: "/active-order-lists",
+            templateUrl: "manager-admin/view/order-lists/active-order-lists.tpl.html",
+            controller: "ActiveOrderListsCtrl"
         })
         .state('manager-admin.restaurants', {
             url: "/restaurants",
