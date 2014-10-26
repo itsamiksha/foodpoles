@@ -1,4 +1,4 @@
-<div class="container-fluid" style="border: 1px solid">
+<div class="container-fluid" style="min-width: 850px">
     <accordion close-others="true">
         <accordion-group ng-repeat="group in groups">
             <accordion-heading>
@@ -10,9 +10,9 @@
             {{group.content}}
         </accordion-group>
 
-        <accordion-group ng-repeat="order in orderList">
+        <accordion-group ng-repeat="order in orderList | orderBy: sortOrder">
             <accordion-heading>
-                <div class="row">
+                <div class="row" ng-click="expandAccordian(order.orderNo)">
                     <div class="col-md-9" style="padding-top: 8px">
                         <span ng-if="order.orderType==0">
                             Table Number :
@@ -31,43 +31,56 @@
             </accordion-heading>
 
             <accordion close-others="true">
-                <accordion-group ng-repeat="prt in order.part">
+                <accordion-group ng-repeat="prt in order.part | orderBy: sortOrderPart" is-open="prt.isopen">
                     <accordion-heading>
-                        <div class="row">
+                        <div class="row" ng-click="expandOrderPartAccordian(prt.orderPartTimeStamp)">
                             <span class="col-md-9">
-                                Order {{$index+1}}
+                                Order {{order.part.length - $index}}
                             </span>
                             <button class="btn btn-small col-md-2 pull-right" ng-click="changeStatus($index, group, $event)"
                                     style="z-index: 999">Print Ticket</button>
                         </div>
                     </accordion-heading>
-                    <div class="gridStyle"  ng-grid="gridOptions">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th data-field="srno" data-align="right" data-sortable="true">Sr No</th>
+                            <th data-field="name" data-align="center" data-sortable="true">Dish Name</th>
+                            <th data-field="customization" data-align="center" data-sortable="true">Customization</th>
+                            <th data-field="quantity" data-align="center" data-sortable="true">Quantity</th>
+                            <th data-field="amount" data-sortable="true">Amount</th>
+                            <th data-field="discount" >Discount</th>
+                            <th data-field="status" data-align="right" data-sortable="true">Status</th>
+                        </tr>
+                        </thead>
+                        <tr ng-repeat-start="data in myData">
+                            <td>{{$index+1}}</td>
+
+                            <td>{{data.dishName}}</td>
+                            <td colspan="4">
+                                <table class="customizationTable">
+                                    <tr ng-repeat-start="custom in data.customization">
+                                        <td class="customizationName"  style="">
+                                            <table style="width: 100%;margin-top: 10px;border-right: 1px solid #ddd;">
+                                                <tr ng-repeat="name in custom.name">
+                                                    <td>{{name}}</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td id="customizeQuantity">{{custom.quantity}}</td>
+                                        <td style="text-align: center">{{custom.amount}}</td>
+                                        <td>{{custom.discount}}</td>
+                                    </tr>
+                                    <tr ng-repeat-end></tr>
+                                </table>
+                            </td>
+                            <td>{{data.status}}</td>
+                        </tr >
+                        <tr ng-repeat-end></tr>
+                    </table>
                 </accordion-group>
             </accordion>
 
-            <!--<div class="container-fluid" ng-repeat="prt in order.part" style="border: 1px solid; ">
-                <div class="row">
-                    <div class="col-md-2">
-                        <h4>Order {{$index+1}}</h4>
-                    </div>
-                    <button class="btn btn-small col-md-2 pull-right">
-                        Print Ticket
-                    </button>
-                </div>
-                <br>
-                <div class="row" style="border: 1px solid">
-                    &lt;!&ndash;<div class="col-md-1">Sr. No.</div>
-                    <div class="col-md-2">Dish Name</div>
-                    <div class="col-md-2">Customization</div>
-                    <div class="col-md-1">Quantity</div>
-                    <div class="col-md-2">Amount</div>
-                    <div class="col-md-2">Discount</div>
-                    <div class="col-md-2">Net</div>&ndash;&gt;
-
-                    <div class="gridStyle"  ng-grid="gridOptions">
-                    </div>
-                </div>
-            </div>-->
 
         </accordion-group>
     </accordion>

@@ -92,6 +92,12 @@ app.controller("OrderListsMenuCtrl", ["$scope", "$location", "$state", function(
 
 }]);
 
+/*app.filter('reverse', function() {
+    return function(items) {
+        return items.slice().reverse();
+    };
+});*/
+
 app.controller("ActiveOrderListsCtrl",['$scope', '$location', '$state', function($scope, $location, $state){
 
     $scope.orderList = [
@@ -100,74 +106,190 @@ app.controller("ActiveOrderListsCtrl",['$scope', '$location', '$state', function
             "orderType":"0",//in restaurant
             "servingAddress": "10",
             "status": "Processing",
+            "orderTimeStamp":1,
             "part": [
                 {
-                    "orderPart":[
+                    "order":[
                         {
                             "status": "Served",
-                            "dishName": "Daal Makhani",
+                            "dishName": "Fried Rice",
                             "customization":[
                                 {
-                                    "name":"No Onion",
+                                    "name":["No Onion"],
+                                    "amount": "120",
+                                    "discount":"-",
                                     "quantity":"1"
                                 },
                                 {
-                                    "name": "No Garlic",
+                                    "name": ["No Garlic"],
+                                    "amount": "120",
+                                    "discount":"-",
                                     "quantity": "1"
                                 }
-                            ],
-                            "amount": "120",
-                            "discount":""
+                            ]
                         },
                         {
                             "status": "Served",
                             "dishName": "Burger",
                             "customization":[
                                 {
-                                    "name":"Regular",
+                                    "name":["Regular"],
+                                    "amount": "120",
+                                    "discount":"-",
                                     "quantity":"1"
                                 }
-                            ],
-                            "amount": "130",
-                            "discount":""
+                            ]
                         }
-                    ]
+                    ],
+                    "orderPartTimeStamp": 1414267282826,
+                    "isopen": false
                 },
                 {
-                    "orderPart":[
+                    "order":[
                         {
                             "status": "Processing",
                             "dishName": "Daal Makhani",
                             "customization":[
                                 {
-                                    "name":"Regular",
+                                    "name":["Regular"],
+                                    "amount": "120",
+                                    "discount":"-",
                                     "quantity":"1"
                                 }
-                            ],
-                            "amount": "120",
-                            "discount":""
+                            ]
                         }
-                    ]
+                    ],
+                    "orderPartTimeStamp": 1414267298262,
+                    "isopen": false
+                },
+                {
+                    "order":[
+                        {
+                            "status": "Processing",
+                            "dishName": "Tea",
+                            "customization":[
+                                {
+                                    "name":["Regular"],
+                                    "discount":"-",
+                                    "amount": "120",
+                                    "quantity":"1"
+                                }
+                            ]
+                        }
+                    ],
+                    "orderPartTimeStamp": 1414267310303,
+                    "isopen": false
+                }
+            ]
+        },
+        {
+            "orderNo": "4321",
+            "orderType":"1",//in restaurant
+            "servingAddress": "A-246 Malviya Nagar",
+            "status": "Processing",
+            "orderTimeStamp":2,
+            "part": [
+                {
+                    "order":[
+                        {
+                            "status": "Served",
+                            "dishName": "Pizza",
+                            "customization":[
+                                {
+                                    "name":["No Onion","No Garlic","No Capsicum"],
+                                    "amount": "120",
+                                    "discount":"-",
+                                    "quantity":"1"
+                                },
+                                {
+                                    "name": ["No Garlic"],
+                                    "amount": "120",
+                                    "discount":"-",
+                                    "quantity": "1"
+                                }
+                            ]
+
+                        },
+                        {
+                            "status": "Served",
+                            "dishName": "Burger",
+                            "customization":[
+                                {
+                                    "name":["Regular"],
+                                    "amount": "130",
+                                    "discount":"-",
+                                    "quantity":"1"
+                                }
+                            ]
+                        }
+                    ],
+                    "orderPartTimeStamp": 1414267774544,
+                    "isopen": false
+                },
+                {
+                    "order":[
+                        {
+                            "status": "Processing",
+                            "dishName": "Daal Makhani",
+                            "customization":[
+                                {
+                                    "name":["Regular"],
+                                    "amount": "120",
+                                    "discount":"-",
+                                    "quantity":"1"
+                                }
+                            ]
+
+                        }
+                    ],
+                    "orderPartTimeStamp": 1414267785576,
+                    "isopen": false
                 }
             ]
         }
 
     ];
+    $scope.sortOrder = '-orderTimeStamp';
+    $scope.sortOrderPart = '-orderPartTimeStamp';
+    /**
+     * Description
+     * @method expandAccordian
+     * @param Order Number
+     * @return
+     * This method is*/
+    $scope.expandAccordian = function(orderNo){
+        angular.forEach($scope.orderList, function(value, key){
+            if(angular.equals(orderNo, value.orderNo)){
+                $scope.tempOrderPart = value.part;
+                angular.forEach(value.part, function(prt, key){
+                    prt.isopen = false;
+                })
 
-    $scope.myData = [
+            }
+        });
+    }
+    $scope.expandOrderPartAccordian = function(orderPartTimeStamp){
+        angular.forEach($scope.tempOrderPart, function(partValue, partKey){
+            if(angular.equals(orderPartTimeStamp, partValue.orderPartTimeStamp)){
+                $scope.myData = partValue.order;
+                console.info($scope.myData);
+            }
+        })
+    }
+    /*$scope.myData = [
         {srno: "1", dishName: "abc", customization:"Regular", quantity:"1", amount:"450", discount:"-", net:"450"},
         {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
         {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
         {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
         {srno: "3", dishName: "dsa", customization:"Regular", quantity:"5", amount:"450", discount:"-", net:"450"}
     ];
-
+*/
     $scope.gridOptions = {
         data: 'myData',
         columnDefs: [
-            {field: 'srno', displayName: 'Sr No.',width:'8%'},
+            //{field: 'srno', displayName: 'Sr No.',width:'8%'},
             {field:'dishName', displayName:'Dish Name',width:'15%'},
-            {field:'customization', displayName:'Customization',width:'15%'},
+            //{field:'customization', displayName:'Customization',width:'15%'},
             {field:'quantity', displayName:'Quantity',width:'15%'},
             {field:'amount', displayName:'Amount',width:'15%'},
             {field:'discount', displayName:'Discount',width:'15%'},

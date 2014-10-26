@@ -90,6 +90,23 @@ require 'common/header.php';
         .list-group-item:first-child{
             border-radius: 0;
         }
+        .customizationTable{
+            width: 90%;
+            border-collapse: collapse;
+        }
+        .customizationTable td{
+            text-align: left;
+            display: table-cell;
+        }
+        .customizationName{
+            width:35%;
+        }
+        #customizeQuantity{
+            text-align: center;
+        }
+        .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+            vertical-align: middle;
+        }
 
     </style>
 
