@@ -256,36 +256,38 @@ app.controller("ActiveOrderListsCtrl",['$scope', '$location', '$state', function
      * @method expandAccordian
      * @param Order Number
      * @return
-     * This method is*/
+     * This method is used to create order parts accordian dynamically
+     * */
     $scope.expandAccordian = function(orderNo){
         angular.forEach($scope.orderList, function(value, key){
             if(angular.equals(orderNo, value.orderNo)){
                 $scope.tempOrderPart = value.part;
+                /**To close all order Part accordian By default on click of parent accordian*/
                 angular.forEach(value.part, function(prt, key){
                     prt.isopen = false;
                 })
 
             }
         });
-    }
+    };
+    /**
+     * Description
+     * @method expandOrderPartAccordian
+     * @param orderPartTimeStamp
+     * @return
+     * This method is used to create table inside order part accordian
+     * by dynamically setting $scope.orderTableData.
+     * */
     $scope.expandOrderPartAccordian = function(orderPartTimeStamp){
         angular.forEach($scope.tempOrderPart, function(partValue, partKey){
             if(angular.equals(orderPartTimeStamp, partValue.orderPartTimeStamp)){
-                $scope.myData = partValue.order;
-                console.info($scope.myData);
+                $scope.orderTableData = partValue.order;
+                console.info($scope.orderTableData);
             }
         })
-    }
-    /*$scope.myData = [
-        {srno: "1", dishName: "abc", customization:"Regular", quantity:"1", amount:"450", discount:"-", net:"450"},
-        {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
-        {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
-        {srno: "2", dishName: "xyz", customization:"Regular", quantity:"2", amount:"450", discount:"-", net:"450"},
-        {srno: "3", dishName: "dsa", customization:"Regular", quantity:"5", amount:"450", discount:"-", net:"450"}
-    ];
-*/
-    $scope.gridOptions = {
-        data: 'myData',
+    };
+    /*$scope.gridOptions = {
+        data: 'orderTableData',
         columnDefs: [
             //{field: 'srno', displayName: 'Sr No.',width:'8%'},
             {field:'dishName', displayName:'Dish Name',width:'15%'},
@@ -295,7 +297,7 @@ app.controller("ActiveOrderListsCtrl",['$scope', '$location', '$state', function
             {field:'discount', displayName:'Discount',width:'15%'},
             {field:'net', displayName:'Net',width:'15%'}
         ]
-    };
+    };*/
 
     $scope.changeStatus = function(idx, group, e) {
         if (e) {
