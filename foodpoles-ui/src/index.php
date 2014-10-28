@@ -136,17 +136,20 @@ require 'common/header.php';
 <script type="text/javascript" src="../vendor/angular-js/angular.min.js"></script>
 <script type="text/javascript" src="../vendor/angular-js/angular-resource.min.js"></script>
 <script type="text/javascript" src="../vendor/angular-js/angular-ui-router.js"></script>
-<script type="text/javascript" src="../vendor/angular-js/ng-grid/ng-grid.js"></script>
+<script type="text/javascript" src="../vendor/ui%20bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
 
-<!--for admin-- >
-<!--<script type="text/javascript" src="admin/controllers/AdminCtrl.js"></script>-->
+<!-- for admin -->
 
-<!--for manager-admin -->
-<script type="text/javascript" src="manager-admin/controllers/ManagerAdminCtrl.js"></script>
+<script type="text/javascript" src="admin/controllers/AdminCtrl.js"></script>
+
+<!-- for manager-admin -->
+
+<!--<script type="text/javascript" src="manager-admin/controllers/ManagerAdminCtrl.js"></script>
+-->
 
 <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../vendor/ui%20bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
+
 
 </body>
 </html>

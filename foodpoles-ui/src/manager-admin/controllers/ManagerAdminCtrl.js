@@ -2,7 +2,7 @@
  * Created by STG on 21/10/14.
  */
 
-var app = angular.module("FoodPoleApp",['ui.router','ui.bootstrap','ngGrid']);
+var app = angular.module("FoodPoleApp",['ui.router','ui.bootstrap']);
 
 app.controller('DropdownCtrl',['$scope', '$location', '$state', function ($scope, $location, $state) {
     $scope.status = {
@@ -21,7 +21,7 @@ app.controller('DropdownCtrl',['$scope', '$location', '$state', function ($scope
 
     $scope.menu = [
         {'name': 'Order Lists', 'url': '/manager-admin/order-lists'},
-        {'name': 'Edit Menu', 'url': '/manager-admin/'},
+        {'name': 'Menu Edit', 'url': '/manager-admin/menu-edit'},
         {'name': 'Misc. Settings', 'url': '/manager-admin/'}
     ];
 
@@ -68,6 +68,7 @@ app.controller("OrderListsMenuCtrl", ["$scope", "$location", "$state", function(
         }
     ];
 
+
     var activeSelectedMenu = $location.path();
     if(activeSelectedMenu !== undefined && !(angular.equals(activeSelectedMenu, ''))){
         angular.forEach($scope.navTabMenu, function(value, key){
@@ -81,22 +82,75 @@ app.controller("OrderListsMenuCtrl", ["$scope", "$location", "$state", function(
     /**
      * Description
      * @method selectAndRedirectTo
-     * @param {} menuName
-     * @param {} url
+     * @param {} menu
      * @return
      */
-    $scope.selectAndRedirectTo = function(name, url){
-        $scope.activeSelectedMenu = name;
-        $location.path(url);
+    $scope.selectAndRedirectTo = function(menu){
+        $scope.activeSelectedMenu = menu.name;
+        $location.path(menu.url);
     }
 
 }]);
 
-/*app.filter('reverse', function() {
-    return function(items) {
-        return items.slice().reverse();
+app.controller("MenuEditCtrl",['$scope', '$location', function($scope, $location){
+    var demoMenuJSON = [
+        {
+            "name": "Starter",
+            "url": "",          /**Here url is empty bcoz we have to redirect to only one url every time, which will be hardcoded in the method 'selectAndRedirectTo()'*/
+            "id": 12345
+        },
+        {
+            "name": "Soup",
+            "url": "",
+            "id": 12346
+        },
+        {
+            "name": "Fast Food",
+            "url": "",
+            "id": 12347
+        },
+        {
+            "name": "Desert",
+            "url": "",
+            "id": 12348
+        },
+        {
+            "name": "Ice Cream",
+            "url": "",
+            "id": 12349
+        }
+    ];
+    $scope.navTabMenu = demoMenuJSON;
+
+    //$scope.navTabMenu.push(demoMenuJSON);
+
+    /*var activeSelectedMenu = $location.path();
+    if(activeSelectedMenu !== undefined && !(angular.equals(activeSelectedMenu, ''))){
+        angular.forEach($scope.navTabMenu, function(value, key){
+            if(activeSelectedMenu === value.url){
+                $scope.activeSelectedMenu = value.name;
+            }
+
+        });
+    }*/
+
+    /**
+     * Description
+     * @method selectAndRedirectTo
+     * @param {} menu
+     * @return
+     */
+    $scope.selectAndRedirectTo = function(menu){
+        $scope.activeSelectedMenu = menu.name;
+        //$location.path(url);
     };
-});*/
+
+    $scope.addNewCuisineRedirect = function(){
+
+    };
+
+
+}])
 
 app.controller("ActiveOrderListsCtrl",['$scope', '$location', '$state', function($scope, $location, $state){
 
@@ -286,18 +340,6 @@ app.controller("ActiveOrderListsCtrl",['$scope', '$location', '$state', function
             }
         })
     };
-    /*$scope.gridOptions = {
-        data: 'orderTableData',
-        columnDefs: [
-            //{field: 'srno', displayName: 'Sr No.',width:'8%'},
-            {field:'dishName', displayName:'Dish Name',width:'15%'},
-            //{field:'customization', displayName:'Customization',width:'15%'},
-            {field:'quantity', displayName:'Quantity',width:'15%'},
-            {field:'amount', displayName:'Amount',width:'15%'},
-            {field:'discount', displayName:'Discount',width:'15%'},
-            {field:'net', displayName:'Net',width:'15%'}
-        ]
-    };*/
 
     $scope.changeStatus = function(idx, group, e) {
         if (e) {
@@ -328,13 +370,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
         })
         .state('manager-admin.restaurants', {
             url: "/restaurants",
-            templateUrl: "manager-admin/view/restaurant/all-restaurants.tpl.html",
+            templateUrl: "manager-admin/view/menu-edit/menu-edit-base.tpl.html",
             controller: "AdminCtrl"
         })
-        .state('manager-admin.new-restaurant', {
-            url: "/restaurants/new-restaurant",
-            templateUrl: "manager-admin/view/restaurant/new-restaurant.tpl.html",
-            controller: "AdminCtrl"
+        .state('manager-admin.menu-edit', {
+            url: "/menu-edit",
+            templateUrl: "manager-admin/view/menu-edit/menu-edit-base.tpl.html",
+            controller: ""
         })
 
 });

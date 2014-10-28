@@ -11,7 +11,7 @@ $property = new Properties();
 
 function getHeader(){
     global $property;
-    $user = 'manager-admin';
+    $user = 'admin';
     $title = $property->getTitle();
     $header = '';
 

@@ -1,7 +1,6 @@
 /**
  * Created by STG on 10/10/14.
  */
-
 var app = angular.module("FoodPoleApp",['ui.router','ui.bootstrap']);
 
 app.controller('DropdownCtrl',['$scope', '$location', '$state', function ($scope, $location, $state) {

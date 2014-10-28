@@ -26,61 +26,19 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="35" selection-start="2817" selection-end="2817" vertical-scroll-proportion="-19.615385" vertical-offset="1224" max-vertical-offset="2584">
-              <folding />
+            <state line="148" column="0" selection-start="3771" selection-end="3871" vertical-scroll-proportion="-16.038462" vertical-offset="2014" max-vertical-offset="2635">
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="26" selection-start="3286" selection-end="4015" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="2227">
+            <state line="13" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.3877193" vertical-offset="0" max-vertical-offset="2227">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order-lists-base.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/order-lists-base.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="313" selection-end="313" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerAdminCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/controllers/ManagerAdminCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="278" column="37" selection-start="9124" selection-end="9124" vertical-scroll-proportion="0.0" vertical-offset="5269" max-vertical-offset="5865">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="active-order-lists.tpl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/active-order-lists.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="67" selection-start="3217" selection-end="3217" vertical-scroll-proportion="0.3626571" vertical-offset="733" max-vertical-offset="1564">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#accordion-group#0;n#accordion#0;n#accordion-group#1;n#accordion#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#accordion-group#0;n#accordion#0;n#accordion-group#1;n#accordion#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigationtab.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/tpls/navigationtab.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="75" selection-start="7" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="561">
-              <folding>
-                <marker date="1414007434838" expanded="true" signature="5:403" placeholder="..." />
-                <marker date="1414007434838" expanded="true" signature="413:661" placeholder="..." />
-                <marker date="1414007434838" expanded="true" signature="454:654" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -88,7 +46,16 @@
       <file leaf-file-name="AdminCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="6" selection-start="901" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1462">
+            <state line="3" column="12" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpoles-ui/a.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="89" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -104,22 +71,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/area/all-area.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/new-restaurant.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/all-restaurants.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/active-order-list.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/order-list-base.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/common/directives/collapsetab.js" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/manager-admin-base.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/common/tpls/navigationtab.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/common/tpls/collapsetab.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/order-lists-base.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/common/header.php" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/common/tpls/dropdown.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/index.php" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/controllers/ManagerAdminCtrl.js" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/active-order-lists.tpl.html" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/common/tpls/navigationtab.tpl.html" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/menu-edit/new-cuisine.tpl.html" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/menu-edit/menu-edit-base.tpl.html" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/a.html" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/controllers/ManagerAdminCtrl.js" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/common/header.php" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/index.php" />
       </list>
     </option>
   </component>
@@ -156,6 +123,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,10 +145,6 @@
               <option name="myItemId" value="foodpoles-utility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -192,7 +156,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles-utility" />
+              <option name="myItemId" value="foodpoles-ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,7 +236,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="manager-admin" />
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -298,37 +284,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="manager-admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order-lists" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager-admin" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -345,58 +301,9 @@
               <option name="myItemId" value="foodpoles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foodpoles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,20 +371,20 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489019" sideWeight="0.670418" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -507,64 +414,39 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/directives/collapsetab.js">
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578" />
+        <state line="134" column="32" selection-start="3233" selection-end="3233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771">
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/tpls/collapsetab.tpl.html">
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="156" selection-end="156" vertical-scroll-proportion="-0.71268654" vertical-offset="501" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="6" selection-start="901" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1462">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/tpls/dropdown.tpl.html">
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.030965392" vertical-offset="0" max-vertical-offset="549" />
+        <state line="5" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1462">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/manager-admin-base.tpl.html">
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/a.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="276" selection-end="289" vertical-scroll-proportion="0.4335155" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/admin-base.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="120" selection-start="221" selection-end="221" vertical-scroll-proportion="0.24772313" vertical-offset="0" max-vertical-offset="549" />
+        <state line="14" column="89" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="408">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/all-restaurants.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="652" selection-end="652" vertical-scroll-proportion="0.7741348" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/admin-menu.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="0" selection-end="247" vertical-scroll-proportion="0.18579236" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="26" selection-start="3286" selection-end="4015" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="2227">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/tpls/navigationtab.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="75" selection-start="7" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="561">
-          <folding>
-            <marker date="1414007434838" expanded="true" signature="5:403" placeholder="..." />
-            <marker date="1414007434838" expanded="true" signature="413:661" placeholder="..." />
-            <marker date="1414007434838" expanded="true" signature="454:654" placeholder="..." />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-ui/vendor/bootstrap/css/bootstrap.min.css">
@@ -574,42 +456,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="35" selection-start="2817" selection-end="2817" vertical-scroll-proportion="-19.615385" vertical-offset="1224" max-vertical-offset="2584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/order-lists-base.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="313" selection-end="313" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-ui/vendor/ui bootstrap/ui-bootstrap-tpls-0.11.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="24" selection-start="4821" selection-end="4830" vertical-scroll-proportion="0.33333334" vertical-offset="1062" max-vertical-offset="21505">
+        <state line="79" column="24" selection-start="4821" selection-end="4830" vertical-scroll-proportion="0.33333334" vertical-offset="1062" max-vertical-offset="21505" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/tpls/navigationtab.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="8" selection-start="409" selection-end="631" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/admin-menu.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="0" selection-end="247" vertical-scroll-proportion="0.17894737" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/admin-base.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="120" selection-start="221" selection-end="221" vertical-scroll-proportion="0.23859648" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="89" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/controllers/ManagerAdminCtrl.js">
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="278" column="37" selection-start="9124" selection-end="9124" vertical-scroll-proportion="0.0" vertical-offset="5269" max-vertical-offset="5865">
+        <state line="3" column="12" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/active-order-lists.tpl.html">
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="67" selection-start="3217" selection-end="3217" vertical-scroll-proportion="0.3626571" vertical-offset="733" max-vertical-offset="1564">
+        <state line="148" column="0" selection-start="3771" selection-end="3871" vertical-scroll-proportion="-16.038462" vertical-offset="2014" max-vertical-offset="2635">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#accordion-group#0;n#accordion#0;n#accordion-group#1;n#accordion#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#accordion-group#0;n#accordion#0;n#accordion-group#1;n#accordion#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.3877193" vertical-offset="0" max-vertical-offset="2227">
+          <folding />
         </state>
       </provider>
     </entry>
