@@ -1,0 +1,7 @@
+<div>
+    <a href="" style="border-radius: 0"
+       class="list-group-item" ng-click="selectAndRedirectTo(men.name, men.url)"
+       ng-repeat="men in menu" ng-class="{active: men.name == activeSelectedMenu}">
+        {{men.name}}
+    </a>
+</div>

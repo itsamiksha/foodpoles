@@ -5,12 +5,22 @@
 * Time: 10:00 AM
 -->
 
-<div class="container-fluid">
+<div class="row">
+    <div class="left-panel" ng-controller="SetValueNavCtrl" ng-include="'admin/view/set-value/set-value-nav.tpl.html'" style="padding: 0;"></div>
+
+    <div class="right-panel">
+        <div class="" ui-view></div>
+    </div>
+
+</div>
+
+
+<!-- <div class="container-fluid">
     <div class="page-header">
         <span class="custom-heading">Area</span>
     </div>
 
-    <div class="row">
+   <div class="row">
         <div class="col-md-12">
             <div class="col-md-6">
                 <input type="text" class="form-control" placeholder="Search to edit">
@@ -20,4 +30,4 @@
             </button>
         </div>
     </div>
-</div>
+</div>-->

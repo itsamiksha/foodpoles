@@ -19,7 +19,7 @@ app.controller('DropdownCtrl',['$scope', '$location', '$state', function ($scope
 
 
     $scope.menu = [
-        {'name': 'Restaurants', 'url': '/admin/restaurants'},
+        {'name': 'Restaurants', 'url': '/admin/restaurants/new-restaurant'},
         {'name': 'Set Values', 'url': '/admin/set-value'},
         {'name': 'Services Offered', 'url': '/admin/'},
         {'name': 'Restaurant Statistics', 'url': '/admin/'},
@@ -43,38 +43,91 @@ app.controller('DropdownCtrl',['$scope', '$location', '$state', function ($scope
 
 app.controller("AdminCtrl",['$scope', '$location', '$state', function($scope, $location, $state){
 
+
+
     $scope.redirectToNewRestaurant = function(){
         $location.path('/admin/restaurants/new-restaurant')
     }
 }]);
 
-//app.controller((""));
+app.controller("SetValueNavCtrl",['$scope', '$location', function($scope, $location){
+    var menuData = [
+        {
+            name:"City",
+            id:1234
+        },
+        {
+            name: "State",
+            id:1235
+        },
+        {
+            name: "Country",
+            id: 1236
+        },
+        {
+            name: "Customization",
+            id:1237
+        }
+    ]
+
+    $scope.menu = menuData;
+}]);
+
+app.controller("RestaurantNavCtrl", ['$scope', '$location', function($scope, $location){
+
+    var restaurantListData = [
+        {
+            name: "Safari",
+            id: 9874
+        },
+        {
+            name: "Tapri",
+            id:9875
+        },
+        {
+            name: "Kaanji",
+            id: 9876
+        },
+        {
+            name: "Kanha",
+            id: 9871
+        }
+    ];
+    $scope.restaurantList = restaurantListData;
+
+    $scope.redirectToNewRestaurant = function(){
+        $location.path('/admin/restaurants/new-restaurant')
+    };
+}])
 app.config(function($stateProvider, $urlRouterProvider) {
-    //$urlRouterProvider.otherwise("/admin");
+    $urlRouterProvider.otherwise("/admin");
     $stateProvider
         .state('admin', {
             url: "/admin",
             templateUrl: "admin/view/admin-base.tpl.html"
         })
-        .state('admin.set-value', {
-            url: "/set-value",
-            templateUrl: "admin/view/set-value/set-value-base.tpl.html",
-            controller: "AdminCtrl"
-        })
         .state('admin.restaurants', {
             url: "/restaurants",
-            templateUrl: "admin/view/restaurant/all-restaurants.tpl.html",
+            templateUrl: "admin/view/restaurant/restaurants-base.tpl.html",
             controller: "AdminCtrl"
         })
-        .state('admin.new-restaurant', {
-            url: "/restaurants/new-restaurant",
+        /*.state('admin.restaurants.all-restaurants', {
+            url: "/all-restaurants",
+            templateUrl: "admin/view/restaurant/all-restaurants.tpl.html",
+            controller: "AdminCtrl"
+        })*/
+        .state('admin.restaurants.new-restaurant', {
+            url: "/new-restaurant",
             templateUrl: "admin/view/restaurant/new-restaurant.tpl.html",
             controller: "AdminCtrl"
         })
-        .state('admin.k', {
-            url: "/k",
-            template: '<h1>Great</h1>',
-            controller: "AdminCtrl"
+        .state('admin.set-value', {
+            url: "/set-value",
+            templateUrl: "admin/view/set-value/set-value-base.tpl.html"
+        })
+        .state('admin.set-value.value-list', {
+            url: "/value-list",
+            templateUrl: "admin/view/set-value/value-list.tpl.html"
         })
 
 });

@@ -1,0 +1,17 @@
+<!--
+* Created by Shobhit Dixit.
+* User: STG
+* Date: 29/10/14
+* Time: 11:56 AM
+-->
+
+<div>
+    <input class="form-control" placeholder="Searchkj">
+    <a href="" style="border-radius: 0" class="list-group-item active"
+       ng-click="redirectToNewRestaurant()">Add Restaurant</a>
+    <a href="" style="border-radius: 0"
+       class="list-group-item" ng-click=""
+       ng-repeat="restaurant in restaurantList" ng-class="{active: restaurant.name == activeSelectedRestaurant}">
+        {{restaurant.name}}
+    </a>
+</div>
