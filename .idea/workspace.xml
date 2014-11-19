@@ -17,18 +17,52 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="foodpoles" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="77" selection-start="3664" selection-end="3741" vertical-scroll-proportion="-73.88461" vertical-offset="408" max-vertical-offset="2635">
+            <state line="8" column="17" selection-start="109" selection-end="109" vertical-scroll-proportion="-0.15482695" vertical-offset="136" max-vertical-offset="2635">
               <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1414568545922" expanded="true" signature="167:4059" placeholder="..." />
+                <marker date="1414568545922" expanded="true" signature="174:2849" placeholder="..." />
+                <marker date="1414568545922" expanded="true" signature="443:2840" placeholder="..." />
+                <marker date="1414568545922" expanded="true" signature="464:590" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="605:645" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="672:713" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="745:902" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="844:892" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="915:955" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="979:1176" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="1234:1269" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="1289:1437" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="1458:1592" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="1609:1734" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="1754:1832" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="1850:2099" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2123:2173" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2196:2237" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2274:2315" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2343:2417" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2448:2522" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2549:2583" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2610:2653" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2780:2827" placeholder="{...}" />
+                <marker date="1414568545922" expanded="true" signature="2856:4051" placeholder="..." />
+                <marker date="1414568545922" expanded="true" signature="2865:2906" placeholder="..." />
+                <marker date="1414568545922" expanded="true" signature="2925:3024" placeholder="..." />
+                <marker date="1414568545922" expanded="false" signature="2961:2977" placeholder="..." />
+                <marker date="1414568545922" expanded="true" signature="2978:3017" placeholder="..." />
+                <marker date="1414568545922" expanded="true" signature="3081:3092" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -37,7 +71,7 @@
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="2227">
+            <state line="13" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2227">
               <folding />
             </state>
           </provider>
@@ -46,12 +80,8 @@
       <file leaf-file-name="AdminCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="4" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1037">
+            <state line="102" column="4" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="2346">
               <folding>
-                <element signature="e#140#1184#0" expanded="false" />
-                <element signature="e#1215#1406#0" expanded="false" />
-                <element signature="e#1515#1802#0" expanded="false" />
-                <element signature="e#1957#2240#0" expanded="false" />
                 <marker date="1414568021036" expanded="true" signature="1494:1833" placeholder="{...}" />
                 <marker date="1414568021036" expanded="true" signature="1874:2409" placeholder="[...]" />
                 <marker date="1414568021036" expanded="true" signature="2690:2846" placeholder="{&quot;url&quot;: &quot;/restaurants&quot;...}" />
@@ -65,66 +95,62 @@
       <file leaf-file-name="new-restaurant.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/new-restaurant.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="632" selection-end="632" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1343">
-              <folding>
-                <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Restaurant.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpoles-utility/entity/Restaurant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="471" column="1" selection-start="7973" selection-end="7973" vertical-scroll-proportion="-18.346153" vertical-offset="7530" max-vertical-offset="8109">
-              <folding>
-                <element signature="e#6#85#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurants-base.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurants-base.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="138" selection-end="138" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="374">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurant-list-nav.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurant-list-nav.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="53" selection-start="143" selection-end="143" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="374">
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rbphpsetup.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="rbphpsetup.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodpoles-dao/rbphpsetup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="205" selection-end="205" vertical-scroll-proportion="0.3715847" vertical-offset="0" max-vertical-offset="549">
-              <folding>
-                <element signature="e#6#86#0" expanded="true" />
-              </folding>
+            <state line="69" column="34" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1292">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin-menu.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/admin-menu.tpl.html">
+      <file leaf-file-name="RestaurantDao.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpoles-dao/RestaurantDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="8" selection-start="0" selection-end="247" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="204">
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="7" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="527">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurantDaoImpl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpoles-dao/impl/RestaurantDaoImpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractDao.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpoles-dao/AbstractDao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="40" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpoles-dao/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoogleAuth.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpoles-dao/GoogleAuth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="14" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="442">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,22 +165,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/menu-edit/new-cuisine.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/menu-edit/menu-edit-base.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/a.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/manager-admin/controllers/ManagerAdminCtrl.js" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/admin-base.tpl.html" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/set-value/set-value-nav.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/set-value/set-value-base.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/set-value/value-list.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurants-base.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/common/header.php" />
         <option value="$PROJECT_DIR$/foodpoles-ui/src/index.php" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/new-restaurant.tpl.html" />
+        <option value="$PROJECT_DIR$/foodpoles-dao/redbeanphp4/rb.php" />
+        <option value="$PROJECT_DIR$/foodpoles-dao/impl/RestaurantDaoImpl.php" />
         <option value="$PROJECT_DIR$/foodpoles-utility/entity/Restaurant.php" />
-        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurant-list-nav.tpl.html" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/new-restaurant.tpl.html" />
         <option value="$PROJECT_DIR$/foodpoles-dao/rbphpsetup.php" />
+        <option value="$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurant-list-nav.tpl.html" />
+        <option value="$PROJECT_DIR$/foodpoles-dao/RestaurantDao.php" />
+        <option value="$PROJECT_DIR$/foodpoles-dao/AbstractDao.php" />
+        <option value="$PROJECT_DIR$/foodpoles-dao/init.php" />
+        <option value="$PROJECT_DIR$/foodpoles-dao/GoogleAuth.php" />
       </list>
     </option>
   </component>
@@ -414,6 +440,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodpoles-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -421,12 +483,15 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="Configurable.PHP.Debug.DBGPProxy" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="Configurable.PHP" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NetTechnocrat" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -436,7 +501,7 @@
       <recent name="C:\Users\STG\PhpstormProjects\foodpoles\foodpoles-ui\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.php">
+  <component name="RunManager" selected="PHP Script.Run Script">
     <configuration default="false" name="restaurant-list-nav.tpl.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/foodpoles/foodpoles-ui/src/admin/view/restaurant/restaurant-list-nav.tpl.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -447,8 +512,23 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="AbstractDao.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/foodpoles-dao/AbstractDao.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/foodpoles-ui/src/index.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -460,14 +540,38 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.restaurant-list-nav.tpl.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="rbphpsetup.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://localhost:49941/foodpoles/foodpoles-dao/rbphpsetup.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Run Script" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/foodpoles-dao/rbphpsetup.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.rbphpsetup.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.Run Script" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.restaurant-list-nav.tpl.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.AbstractDao.php" />
+      <item index="5" class="java.lang.String" itemvalue="PHP Script.index.php" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.restaurant-list-nav.tpl.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.index.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.AbstractDao.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.restaurant-list-nav.tpl.html" />
       </list>
     </recent_temporary>
   </component>
@@ -498,25 +602,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489019" sideWeight="0.6012862" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489019" sideWeight="0.6463022" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35369775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37942123" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -532,7 +636,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -548,108 +655,40 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/set-value/value-list.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="0" selection-end="121" vertical-scroll-proportion="0.24772313" vertical-offset="0" max-vertical-offset="549">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/active-order-lists.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/view/order-lists/order-lists-base.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/all-restaurants.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/manager-admin/controllers/ManagerAdminCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5945" max-vertical-offset="6579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/admin-base.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="303" selection-end="303" vertical-scroll-proportion="0.3715847" vertical-offset="0" max-vertical-offset="549">
-          <folding />
-        </state>
+        <state line="12" column="36" selection-start="303" selection-end="303" vertical-scroll-proportion="0.3715847" vertical-offset="0" max-vertical-offset="549" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/admin-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="0" selection-end="247" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="204">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="2227">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="77" selection-start="3664" selection-end="3741" vertical-scroll-proportion="-73.88461" vertical-offset="408" max-vertical-offset="2635">
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/new-restaurant.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="632" selection-end="632" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1343">
-          <folding>
-            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="5" column="8" selection-start="0" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-utility/entity/City.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="92" selection-end="289" vertical-scroll-proportion="0.3715847" vertical-offset="0" max-vertical-offset="2856">
-          <folding />
-        </state>
+        <state line="17" column="23" selection-start="92" selection-end="289" vertical-scroll-proportion="0.3715847" vertical-offset="0" max-vertical-offset="2856" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-utility/entity/Restaurant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="471" column="1" selection-start="7973" selection-end="7973" vertical-scroll-proportion="-18.346153" vertical-offset="7530" max-vertical-offset="8109">
-          <folding>
-            <element signature="e#6#85#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="479" column="33" selection-start="8570" selection-end="8570" vertical-scroll-proportion="-12.115385" vertical-offset="7488" max-vertical-offset="8024" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurants-base.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="138" selection-end="138" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="374" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurant-list-nav.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="51" selection-start="141" selection-end="141" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="374" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/controllers/AdminCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="4" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1037">
           <folding>
-            <element signature="e#140#1184#0" expanded="false" />
-            <element signature="e#1215#1406#0" expanded="false" />
-            <element signature="e#1515#1802#0" expanded="false" />
-            <element signature="e#1957#2240#0" expanded="false" />
             <marker date="1414568021036" expanded="true" signature="1494:1833" placeholder="{...}" />
             <marker date="1414568021036" expanded="true" signature="1874:2409" placeholder="[...]" />
             <marker date="1414568021036" expanded="true" signature="2690:2846" placeholder="{&quot;url&quot;: &quot;/restaurants&quot;...}" />
@@ -659,30 +698,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurants-base.tpl.html">
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/new-restaurant.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="138" selection-end="138" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="374">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/admin/view/restaurant/restaurant-list-nav.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="53" selection-start="143" selection-end="143" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="374">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1343">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpoles-dao/rbphpsetup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="205" selection-end="205" vertical-scroll-proportion="0.3715847" vertical-offset="0" max-vertical-offset="549">
+        <state line="69" column="34" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-dao/RestaurantDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-dao/impl/RestaurantDaoImpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-dao/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-dao/AbstractDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="40" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/common/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-dao/GoogleAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="14" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpoles-ui/src/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="109" selection-end="109" vertical-scroll-proportion="-0.15482695" vertical-offset="136" max-vertical-offset="2635">
           <folding>
-            <element signature="e#6#86#0" expanded="true" />
+            <marker date="1414568545922" expanded="true" signature="167:4059" placeholder="..." />
+            <marker date="1414568545922" expanded="true" signature="174:2849" placeholder="..." />
+            <marker date="1414568545922" expanded="true" signature="443:2840" placeholder="..." />
+            <marker date="1414568545922" expanded="true" signature="464:590" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="605:645" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="672:713" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="745:902" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="844:892" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="915:955" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="979:1176" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="1234:1269" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="1289:1437" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="1458:1592" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="1609:1734" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="1754:1832" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="1850:2099" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2123:2173" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2196:2237" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2274:2315" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2343:2417" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2448:2522" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2549:2583" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2610:2653" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2780:2827" placeholder="{...}" />
+            <marker date="1414568545922" expanded="true" signature="2856:4051" placeholder="..." />
+            <marker date="1414568545922" expanded="true" signature="2865:2906" placeholder="..." />
+            <marker date="1414568545922" expanded="true" signature="2925:3024" placeholder="..." />
+            <marker date="1414568545922" expanded="false" signature="2961:2977" placeholder="..." />
+            <marker date="1414568545922" expanded="true" signature="2978:3017" placeholder="..." />
+            <marker date="1414568545922" expanded="true" signature="3081:3092" placeholder="..." />
           </folding>
         </state>
       </provider>

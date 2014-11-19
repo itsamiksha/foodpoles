@@ -469,4 +469,19 @@ class Restaurant {
         return $this->restaurantId;
     }
 
+    public function toString() {
+    return "Restaurant [id=" . $this->restaurantId. ", restaurantName=" . $this->name
+    . ", address1=" . $this->address1. ", address2="
+    . $this->address2 . ", cityId=" . $this->cityId
+    . ", cityName=" . $this->cityName
+    . ", phoneNo=" . $this->phoneNo
+    . ", createDate=" . $this->createdDate.", lastModifiedBy=" . $this->lastModifiedBy.", lastModifiedDate=" . $this->lastModifiedDate.
+    ", isActive=" . $this->isActive.", isDeleted=" . $this->isDeleted.", menuId=" . $this->menuId.", openTime=" . $this->openTime.
+    ", closeTime=" . $this->closeTime.", deliveryFee=" . $this->deliveryFee.", deliveryTime=" . $this->deliveryTime.
+    ", minDelivery=" . $this->minDelivery.", onlinePay=" . $this->onlinePay.", pureVeg=" . $this->pureVeg.", preOrder=" . $this->preOrder.
+    ", homeDelivery=" . $this->homeDelivery.", pickUp=" . $this->pickUp.", dealsAvailable=" . $this->dealsAvailable.
+    ", midnightDeals=" . $this->midnightDeals.", breakfast=" . $this->breakfast.", eveningSnacks=" . $this->eveningSnacks."]";
+    }
+
+
 }
