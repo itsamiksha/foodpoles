@@ -66,5 +66,10 @@ $restaurant->setName('Safari');
 $restaurant->setAddress1('Gopal Pura');
 $restaurant->setAddress2('Near Riddhi Siddhi');
 $restaurant->setCityId('1234');
+$restaurant->setBreakfast(true);
+$restaurant->setCityName('Jaipur');
+$restaurant->setCreatedBy('Admin');
+$restaurant->setDeliveryFee(150);
+$restaurant->setEveningSnacks(true);
 
 $restService->create($restaurant);

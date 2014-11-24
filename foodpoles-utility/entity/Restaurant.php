@@ -12,15 +12,16 @@ class Restaurant {
     private $restaurantId;
     private $address1;
     private $address2;
+    private $address3;
     private $cityId;
     private $cityName;
     private $phoneNo;
     private $createdDate;
+    private $createdBy;
     private $lastModifiedBy;
     private $lastModifiedDate;
     private $isActive;
     private $isDeleted;
-    private $menuId;
     //filters
     private $openTime;
     private $closeTime;
@@ -68,6 +69,23 @@ class Restaurant {
     {
         return $this->address2;
     }
+
+    /**
+     * @param $address3
+     */
+    public function setAddress3($address3)
+    {
+        $this->address3 = $address3;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAddress3()
+    {
+        return $this->address3;
+    }
+
 
     /**
      * @param mixed $breakfast
@@ -147,6 +165,23 @@ class Restaurant {
     public function getCreatedDate()
     {
         return $this->createdDate;
+    }
+
+
+    /**
+     * @param mixed $createdBy
+     */
+    public function setCreatedBy($createdBy)
+    {
+        $this->createdBy = $createdBy;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreatedBy()
+    {
+        return $this->createdBy;
     }
 
     /**
@@ -291,22 +326,6 @@ class Restaurant {
     public function getLastModifiedDate()
     {
         return $this->lastModifiedDate;
-    }
-
-    /**
-     * @param mixed $menuId
-     */
-    public function setMenuId($menuId)
-    {
-        $this->menuId = $menuId;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getMenuId()
-    {
-        return $this->menuId;
     }
 
     /**
@@ -469,18 +488,27 @@ class Restaurant {
         return $this->restaurantId;
     }
 
-    public function toString() {
-    return "Restaurant [id=" . $this->restaurantId. ", restaurantName=" . $this->name
-    . ", address1=" . $this->address1. ", address2="
-    . $this->address2 . ", cityId=" . $this->cityId
-    . ", cityName=" . $this->cityName
-    . ", phoneNo=" . $this->phoneNo
-    . ", createDate=" . $this->createdDate.", lastModifiedBy=" . $this->lastModifiedBy.", lastModifiedDate=" . $this->lastModifiedDate.
-    ", isActive=" . $this->isActive.", isDeleted=" . $this->isDeleted.", menuId=" . $this->menuId.", openTime=" . $this->openTime.
-    ", closeTime=" . $this->closeTime.", deliveryFee=" . $this->deliveryFee.", deliveryTime=" . $this->deliveryTime.
-    ", minDelivery=" . $this->minDelivery.", onlinePay=" . $this->onlinePay.", pureVeg=" . $this->pureVeg.", preOrder=" . $this->preOrder.
-    ", homeDelivery=" . $this->homeDelivery.", pickUp=" . $this->pickUp.", dealsAvailable=" . $this->dealsAvailable.
-    ", midnightDeals=" . $this->midnightDeals.", breakfast=" . $this->breakfast.", eveningSnacks=" . $this->eveningSnacks."]";
+    public function entityFieldValue() {
+    return array(
+        "id"=> $this->getRestaurantId(), "restaurantName"=> $this->getName()
+        , "address1"=>$this->getAddress1(), "address2"=>$this->getAddress2()
+        , "address3"=>$this->getAddress3(), "cityId"=>$this->getCityId()
+        , "cityName" => $this->getCityName()
+        , "phoneNo" => $this->getPhoneNo()
+        , "createdDate" => $this->getCreatedDate()
+        , "createdBy" => $this->getCreatedBy(), "lastModifiedBy" => $this->getLastModifiedBy()
+        , "lastModifiedDate" => $this->getLastModifiedDate()
+        , "isActive" => $this->getIsActive(), "isDeleted" => $this->getIsDeleted()
+        , "openTime" => $this->getOpenTime()
+        , "closeTime" => $this->getCloseTime(), "deliveryFee" => $this->getDeliveryFee()
+        , "deliveryTime" => $this->getDeliveryTime()
+        , "minDelivery" => $this->getMinDelivery(), "onlinePay" => $this->getOnlinePay()
+        , "pureVeg" => $this->getPureVeg(), "preOrder" => $this->getPreOrder()
+        , "homeDelivery" => $this->getHomeDelivery(), "pickUp" => $this->getPickUp()
+        , "dealsAvailable" => $this->getDealsAvailable()
+        , "midnightDeals" => $this->getMidnightDeals(), "breakfast" => $this->getBreakfast()
+        , "eveningSnacks" => $this->getEveningSnacks()
+    );
     }
 
 
