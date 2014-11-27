@@ -6,43 +6,68 @@
  * Time: 10:34 PM
  */
 
-/*require'redbeanphp4/rb.php';
-require'../foodpoles-utility/entity/Restaurant.php';
 
-$dbHost = 'localhost';
-$dbName = 'rbtest';
-$dbUser = 'root';
-$dbUserPassword = '';
-$freezeTable = 'FALSE';
-
-$restaurant = new Restaurant();
-$restaurant->setName('Safari');
-$restaurant->setAddress1('Gopal Pura');
-$restaurant->setAddress2('Near Riddhi Siddhi');
-$restaurant->setCityId('1234');
+require'../foodpoles-utility/entity/Set.php';
+require 'impl/SetDaoImpl.php';
 
 
-R::setup('mysql:host='.$dbHost.';dbname='.$dbName,$dbUser,$dbUserPassword);
-//R::freeze($freezeTable);
 
-$tableName = 'restaurant';
+class SetService{
+
+    private $setDao;
+
+    public function setSetDao($setDao)
+    {
+        $this->setDao = $setDao;
+    }
+
+    public function getSetDao()
+    {
+        return $this->setDao;
+    }
 
 
-$tableCont= R::dispense($tableName);
+    public function create($set){
+        $this->setDao->create($set);
+    }
 
-$tableCont->name = $restaurant->getName();
-$tableCont->address1 = $restaurant->getAddress1();
-$tableCont->address2 = $restaurant->getAddress2();
-$tableCont->cityId = $restaurant->getCityId();
+    public function getById($id, $entityName){
+        return $this->setDao->getById($id, $entityName);
+    }
 
-try{
-    R::store($tableCont);
-    echo 'New Row Added';
+    public function getAll( $entityName){
+        return $this->setDao->getAll($entityName);
+    }
+
+    public function update( $set){
+        return $this->setDao->update($set);
+    }
+
+    public function getByName($setName){
+        return $this->setDao->getByName($setName);
+    }
 }
-catch(Exception $e) {
-    echo $e;
-}
-*/
+
+$setDaoImpl = new SetDaoImpl();
+$setService = new SetService();
+$set = new Set();
+$set->setSetName("Area");
+//$set->setId(6);
+$set->setParentSetId(4);
+$set->setSetNameUpperCase(strtoupper($set->getSetName()));
+$set->setCreatedBy("Admin");
+$set->setIsActive(true);
+$set->setIsDeleted(false);
+
+$setService->setSetDao(new SetDaoImpl());
+$setService->create($set);
+//$setService->update($set);
+//$temp = $setService->getByName('country');
+
+//print_r(json_encode($temp->getProperties()));
+
+/*
+
 require'../foodpoles-utility/entity/Restaurant.php';
 require 'impl/RestaurantDaoImpl.php';
 
@@ -62,7 +87,7 @@ class RestaurantService{
 $restaurantDaoImpl = new RestaurantDaoImpl();
 $restService = new RestaurantService($restaurantDaoImpl);
 $restaurant = new Restaurant();
-$restaurant->setName('Safari');
+$restaurant->setRestaurantName('Safari');
 $restaurant->setAddress1('Gopal Pura');
 $restaurant->setAddress2('Near Riddhi Siddhi');
 $restaurant->setCityId('1234');
@@ -72,4 +97,4 @@ $restaurant->setCreatedBy('Admin');
 $restaurant->setDeliveryFee(150);
 $restaurant->setEveningSnacks(true);
 
-$restService->create($restaurant);
+$restService->create($restaurant);*/

@@ -14,4 +14,16 @@ class RestaurantDaoImpl extends AbstractDao implements RestaurantDao{
     public function create($restaurant){
         parent::create($restaurant);
     }
+
+    public function getById($id, $entity_name){
+        return parent::getById($id, $entity_name);
+    }
+
+    public function getAll($entity_name){
+        return parent::getAll($entity_name);
+    }
+
+    public function update($restaurant){
+        return parent::update($restaurant);
+    }
 }

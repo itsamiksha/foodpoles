@@ -8,35 +8,35 @@
 
 class Restaurant {
 
-    private $name;
-    private $restaurantId;
+    private $restaurant_name;
+    private $id;
     private $address1;
     private $address2;
     private $address3;
-    private $cityId;
-    private $cityName;
-    private $phoneNo;
-    private $createdDate;
-    private $createdBy;
-    private $lastModifiedBy;
-    private $lastModifiedDate;
-    private $isActive;
-    private $isDeleted;
+    private $city_id;
+    private $city_name;
+    private $phone_no;
+    private $created_date;
+    private $created_by;
+    private $last_modified_by;
+    private $last_modified_date;
+    private $is_active = true;
+    private $is_deleted = false;
     //filters
-    private $openTime;
-    private $closeTime;
-    private $deliveryFee;
-    private $deliveryTime;
-    private $minDelivery;
-    private $onlinePay;
-    private $pureVeg;
-    private $preOrder;
-    private $homeDelivery;
-    private $pickUp;
-    private $dealsAvailable;
-    private $midnightDeals;
+    private $open_time;
+    private $close_time;
+    private $delivery_fee;
+    private $delivery_time;
+    private $min_delivery;
+    private $online_pay;
+    private $pure_veg;
+    private $pre_order;
+    private $home_delivery;
+    private $pick_up;
+    private $deals_available;
+    private $midnight_deals;
     private $breakfast;
-    private $eveningSnacks;
+    private $evening_snacks;
 
     /**
      * @param mixed $address1
@@ -71,7 +71,7 @@ class Restaurant {
     }
 
     /**
-     * @param $address3
+     * @param mixed $address3
      */
     public function setAddress3($address3)
     {
@@ -85,7 +85,6 @@ class Restaurant {
     {
         return $this->address3;
     }
-
 
     /**
      * @param mixed $breakfast
@@ -104,11 +103,11 @@ class Restaurant {
     }
 
     /**
-     * @param mixed $cityId
+     * @param mixed $city_id
      */
-    public function setCityId($cityId)
+    public function setCityId($city_id)
     {
-        $this->cityId = $cityId;
+        $this->city_id = $city_id;
     }
 
     /**
@@ -116,15 +115,15 @@ class Restaurant {
      */
     public function getCityId()
     {
-        return $this->cityId;
+        return $this->city_id;
     }
 
     /**
-     * @param mixed $cityName
+     * @param mixed $city_name
      */
-    public function setCityName($cityName)
+    public function setCityName($city_name)
     {
-        $this->cityName = $cityName;
+        $this->city_name = $city_name;
     }
 
     /**
@@ -132,15 +131,15 @@ class Restaurant {
      */
     public function getCityName()
     {
-        return $this->cityName;
+        return $this->city_name;
     }
 
     /**
-     * @param mixed $closeTime
+     * @param mixed $close_time
      */
-    public function setCloseTime($closeTime)
+    public function setCloseTime($close_time)
     {
-        $this->closeTime = $closeTime;
+        $this->close_time = $close_time;
     }
 
     /**
@@ -148,32 +147,15 @@ class Restaurant {
      */
     public function getCloseTime()
     {
-        return $this->closeTime;
+        return $this->close_time;
     }
 
     /**
-     * @param mixed $createdDate
+     * @param mixed $created_by
      */
-    public function setCreatedDate($createdDate)
+    public function setCreatedBy($created_by)
     {
-        $this->createdDate = $createdDate;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCreatedDate()
-    {
-        return $this->createdDate;
-    }
-
-
-    /**
-     * @param mixed $createdBy
-     */
-    public function setCreatedBy($createdBy)
-    {
-        $this->createdBy = $createdBy;
+        $this->created_by = $created_by;
     }
 
     /**
@@ -181,15 +163,31 @@ class Restaurant {
      */
     public function getCreatedBy()
     {
-        return $this->createdBy;
+        return $this->created_by;
     }
 
     /**
-     * @param mixed $dealsAvailable
+     * @param mixed $created_date
      */
-    public function setDealsAvailable($dealsAvailable)
+    public function setCreatedDate($created_date)
     {
-        $this->dealsAvailable = $dealsAvailable;
+        $this->created_date = $created_date;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreatedDate()
+    {
+        return $this->created_date;
+    }
+
+    /**
+     * @param mixed $deals_available
+     */
+    public function setDealsAvailable($deals_available)
+    {
+        $this->deals_available = $deals_available;
     }
 
     /**
@@ -197,15 +195,15 @@ class Restaurant {
      */
     public function getDealsAvailable()
     {
-        return $this->dealsAvailable;
+        return $this->deals_available;
     }
 
     /**
-     * @param mixed $deliveryFee
+     * @param mixed $delivery_fee
      */
-    public function setDeliveryFee($deliveryFee)
+    public function setDeliveryFee($delivery_fee)
     {
-        $this->deliveryFee = $deliveryFee;
+        $this->delivery_fee = $delivery_fee;
     }
 
     /**
@@ -213,15 +211,15 @@ class Restaurant {
      */
     public function getDeliveryFee()
     {
-        return $this->deliveryFee;
+        return $this->delivery_fee;
     }
 
     /**
-     * @param mixed $deliveryTime
+     * @param mixed $delivery_time
      */
-    public function setDeliveryTime($deliveryTime)
+    public function setDeliveryTime($delivery_time)
     {
-        $this->deliveryTime = $deliveryTime;
+        $this->delivery_time = $delivery_time;
     }
 
     /**
@@ -229,15 +227,15 @@ class Restaurant {
      */
     public function getDeliveryTime()
     {
-        return $this->deliveryTime;
+        return $this->delivery_time;
     }
 
     /**
-     * @param mixed $eveningSnacks
+     * @param mixed $evening_snacks
      */
-    public function setEveningSnacks($eveningSnacks)
+    public function setEveningSnacks($evening_snacks)
     {
-        $this->eveningSnacks = $eveningSnacks;
+        $this->evening_snacks = $evening_snacks;
     }
 
     /**
@@ -245,15 +243,15 @@ class Restaurant {
      */
     public function getEveningSnacks()
     {
-        return $this->eveningSnacks;
+        return $this->evening_snacks;
     }
 
     /**
-     * @param mixed $homeDelivery
+     * @param mixed $home_delivery
      */
-    public function setHomeDelivery($homeDelivery)
+    public function setHomeDelivery($home_delivery)
     {
-        $this->homeDelivery = $homeDelivery;
+        $this->home_delivery = $home_delivery;
     }
 
     /**
@@ -261,47 +259,63 @@ class Restaurant {
      */
     public function getHomeDelivery()
     {
-        return $this->homeDelivery;
+        return $this->home_delivery;
     }
 
     /**
-     * @param mixed $isActive
+     * @param mixed $id
      */
-    public function setIsActive($isActive)
+    public function setId($id)
     {
-        $this->isActive = $isActive;
+        $this->id = $id;
     }
 
     /**
      * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param boolean $is_active
+     */
+    public function setIsActive($is_active)
+    {
+        $this->is_active = $is_active;
+    }
+
+    /**
+     * @return boolean
      */
     public function getIsActive()
     {
-        return $this->isActive;
+        return $this->is_active;
     }
 
     /**
-     * @param mixed $isDeleted
+     * @param boolean $is_deleted
      */
-    public function setIsDeleted($isDeleted)
+    public function setIsDeleted($is_deleted)
     {
-        $this->isDeleted = $isDeleted;
+        $this->is_deleted = $is_deleted;
     }
 
     /**
-     * @return mixed
+     * @return boolean
      */
     public function getIsDeleted()
     {
-        return $this->isDeleted;
+        return $this->is_deleted;
     }
 
     /**
-     * @param mixed $lastModifiedBy
+     * @param mixed $last_modified_by
      */
-    public function setLastModifiedBy($lastModifiedBy)
+    public function setLastModifiedBy($last_modified_by)
     {
-        $this->lastModifiedBy = $lastModifiedBy;
+        $this->last_modified_by = $last_modified_by;
     }
 
     /**
@@ -309,15 +323,15 @@ class Restaurant {
      */
     public function getLastModifiedBy()
     {
-        return $this->lastModifiedBy;
+        return $this->last_modified_by;
     }
 
     /**
-     * @param mixed $lastModifiedDate
+     * @param mixed $last_modified_date
      */
-    public function setLastModifiedDate($lastModifiedDate)
+    public function setLastModifiedDate($last_modified_date)
     {
-        $this->lastModifiedDate = $lastModifiedDate;
+        $this->last_modified_date = $last_modified_date;
     }
 
     /**
@@ -325,15 +339,15 @@ class Restaurant {
      */
     public function getLastModifiedDate()
     {
-        return $this->lastModifiedDate;
+        return $this->last_modified_date;
     }
 
     /**
-     * @param mixed $midnightDeals
+     * @param mixed $midnight_deals
      */
-    public function setMidnightDeals($midnightDeals)
+    public function setMidnightDeals($midnight_deals)
     {
-        $this->midnightDeals = $midnightDeals;
+        $this->midnight_deals = $midnight_deals;
     }
 
     /**
@@ -341,15 +355,15 @@ class Restaurant {
      */
     public function getMidnightDeals()
     {
-        return $this->midnightDeals;
+        return $this->midnight_deals;
     }
 
     /**
-     * @param mixed $minDelivery
+     * @param mixed $min_delivery
      */
-    public function setMinDelivery($minDelivery)
+    public function setMinDelivery($min_delivery)
     {
-        $this->minDelivery = $minDelivery;
+        $this->min_delivery = $min_delivery;
     }
 
     /**
@@ -357,31 +371,15 @@ class Restaurant {
      */
     public function getMinDelivery()
     {
-        return $this->minDelivery;
+        return $this->min_delivery;
     }
 
     /**
-     * @param mixed $name
+     * @param mixed $online_pay
      */
-    public function setName($name)
+    public function setOnlinePay($online_pay)
     {
-        $this->name = $name;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param mixed $onlinePay
-     */
-    public function setOnlinePay($onlinePay)
-    {
-        $this->onlinePay = $onlinePay;
+        $this->online_pay = $online_pay;
     }
 
     /**
@@ -389,15 +387,15 @@ class Restaurant {
      */
     public function getOnlinePay()
     {
-        return $this->onlinePay;
+        return $this->online_pay;
     }
 
     /**
-     * @param mixed $openTime
+     * @param mixed $open_time
      */
-    public function setOpenTime($openTime)
+    public function setOpenTime($open_time)
     {
-        $this->openTime = $openTime;
+        $this->open_time = $open_time;
     }
 
     /**
@@ -405,15 +403,15 @@ class Restaurant {
      */
     public function getOpenTime()
     {
-        return $this->openTime;
+        return $this->open_time;
     }
 
     /**
-     * @param mixed $phoneNo
+     * @param mixed $phone_no
      */
-    public function setPhoneNo($phoneNo)
+    public function setPhoneNo($phone_no)
     {
-        $this->phoneNo = $phoneNo;
+        $this->phone_no = $phone_no;
     }
 
     /**
@@ -421,15 +419,15 @@ class Restaurant {
      */
     public function getPhoneNo()
     {
-        return $this->phoneNo;
+        return $this->phone_no;
     }
 
     /**
-     * @param mixed $pickUp
+     * @param mixed $pick_up
      */
-    public function setPickUp($pickUp)
+    public function setPickUp($pick_up)
     {
-        $this->pickUp = $pickUp;
+        $this->pick_up = $pick_up;
     }
 
     /**
@@ -437,15 +435,15 @@ class Restaurant {
      */
     public function getPickUp()
     {
-        return $this->pickUp;
+        return $this->pick_up;
     }
 
     /**
-     * @param mixed $preOrder
+     * @param mixed $pre_order
      */
-    public function setPreOrder($preOrder)
+    public function setPreOrder($pre_order)
     {
-        $this->preOrder = $preOrder;
+        $this->pre_order = $pre_order;
     }
 
     /**
@@ -453,15 +451,15 @@ class Restaurant {
      */
     public function getPreOrder()
     {
-        return $this->preOrder;
+        return $this->pre_order;
     }
 
     /**
-     * @param mixed $pureVeg
+     * @param mixed $pure_veg
      */
-    public function setPureVeg($pureVeg)
+    public function setPureVeg($pure_veg)
     {
-        $this->pureVeg = $pureVeg;
+        $this->pure_veg = $pure_veg;
     }
 
     /**
@@ -469,45 +467,52 @@ class Restaurant {
      */
     public function getPureVeg()
     {
-        return $this->pureVeg;
+        return $this->pure_veg;
     }
 
     /**
-     * @param mixed $restaurantId
+     * @param mixed $restaurant_name
      */
-    public function setRestaurantId($restaurantId)
+    public function setRestaurantName($restaurant_name)
     {
-        $this->restaurantId = $restaurantId;
+        $this->restaurant_name = $restaurant_name;
     }
 
     /**
      * @return mixed
      */
-    public function getRestaurantId()
+    public function getRestaurantName()
     {
-        return $this->restaurantId;
+        return $this->restaurant_name;
     }
+
+
+
+    /**
+     * contain only persistent values
+     * @return array
+     */
 
     public function entityFieldValue() {
     return array(
-        "id"=> $this->getRestaurantId(), "restaurantName"=> $this->getName()
+        "id"=> $this->getId(), "restaurant_name"=> $this->getRestaurantName()
         , "address1"=>$this->getAddress1(), "address2"=>$this->getAddress2()
-        , "address3"=>$this->getAddress3(), "cityId"=>$this->getCityId()
-        , "cityName" => $this->getCityName()
-        , "phoneNo" => $this->getPhoneNo()
-        , "createdDate" => $this->getCreatedDate()
-        , "createdBy" => $this->getCreatedBy(), "lastModifiedBy" => $this->getLastModifiedBy()
-        , "lastModifiedDate" => $this->getLastModifiedDate()
-        , "isActive" => $this->getIsActive(), "isDeleted" => $this->getIsDeleted()
-        , "openTime" => $this->getOpenTime()
-        , "closeTime" => $this->getCloseTime(), "deliveryFee" => $this->getDeliveryFee()
-        , "deliveryTime" => $this->getDeliveryTime()
-        , "minDelivery" => $this->getMinDelivery(), "onlinePay" => $this->getOnlinePay()
-        , "pureVeg" => $this->getPureVeg(), "preOrder" => $this->getPreOrder()
-        , "homeDelivery" => $this->getHomeDelivery(), "pickUp" => $this->getPickUp()
-        , "dealsAvailable" => $this->getDealsAvailable()
-        , "midnightDeals" => $this->getMidnightDeals(), "breakfast" => $this->getBreakfast()
-        , "eveningSnacks" => $this->getEveningSnacks()
+        , "address3"=>$this->getAddress3(), "city_id"=>$this->getCityId()
+        , "city_name" => $this->getCityName()
+        , "phone_no" => $this->getPhoneNo()
+        , "created_date" => $this->getCreatedDate()
+        , "created_by" => $this->getCreatedBy(), "last_modified_by" => $this->getLastModifiedBy()
+        , "last_modified_date" => $this->getLastModifiedDate()
+        , "is_active" => $this->getIsActive(), "is_deleted" => $this->getIsDeleted()
+        , "open_time" => $this->getOpenTime()
+        , "close_time" => $this->getCloseTime(), "delivery_fee" => $this->getDeliveryFee()
+        , "delivery_time" => $this->getDeliveryTime()
+        , "min_delivery" => $this->getMinDelivery(), "online_pay" => $this->getOnlinePay()
+        , "pure_veg" => $this->getPureVeg(), "pre_order" => $this->getPreOrder()
+        , "home_delivery" => $this->getHomeDelivery(), "pick_up" => $this->getPickUp()
+        , "deals_available" => $this->getDealsAvailable()
+        , "midnight_deals" => $this->getMidnightDeals(), "breakfast" => $this->getBreakfast()
+        , "evening_snacks" => $this->getEveningSnacks()
     );
     }
 

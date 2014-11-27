@@ -6,21 +6,23 @@
  * Time: 10:11 PM
  */
 
-interface RestaurantDao
-{
+interface RestaurantDao{
 
-public function create($restaurant);
+    public function create($restaurant);
 
-/*public function getById($id);
+    public function getById($id, $entity_name);
 
-public function getByName($restaurantName);
+    public function getAll($entity_name);
 
-public function getAll();
+    public function update($restaurant);
+/*
 
-public function update($restaurant);
+public function getByName($restaurant_name);
+
+
+
 
 public function remove($id);*/
 
 }
 
-?>
