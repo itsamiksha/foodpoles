@@ -1,8 +1,8 @@
 <?php
 /**
  * User: STG
- * Date: 27/11/14
- * Time: 12:17 PM
+ * Date: 9/12/14
+ * Time: 12:28 PM
  */
 
 function metadata_autoload ($ClassName) {
@@ -15,14 +15,14 @@ function metadata_autoload ($ClassName) {
 spl_autoload_register("metadata_autoload");
 
 require '/../AbstractDao.php';
-require '/../ValueDao.php';
+require '/../UsersDao.php';
 require_once'/../RedBeanPhpImpl.php';
-//require_once'/../../foodpoles-utility/entity/metadata/ValueMetaData.php';
+//require_once'/../../foodpoles-utility/entity/metadata/UsersMetaData.php';
 
-class ValueDaoImpl extends AbstractDao implements ValueDao{
+class UsersDaoImpl extends AbstractDao implements UsersDao{
 
-    public function create($value){
-        parent::create($value);
+    public function create($user){
+        parent::create($user);
     }
 
     public function getById($id, $entity_name){
@@ -33,17 +33,17 @@ class ValueDaoImpl extends AbstractDao implements ValueDao{
         return parent::getAll( $entity_name);
     }
 
-    public function update($value){
-        return parent::update($value);
+    public function update($user){
+        parent::update($user);
     }
 
     /*
-     * return all value with set_id = $set_id
+     * return user with email_id = $email_id
      * */
-    public function getValueBySetId($set_id){
+    public function getUserByEmailId($email_id){
         $rbPhpImpl = new RedBeanPhpImpl();
         $rbPhpImpl->setUpRBPhp();
-        $entityName = 'value';
-        return $rbPhpImpl->find($entityName, ValueMetaData::COL_SET_ID, $set_id);
+        $entityName = 'users';
+        return $rbPhpImpl->findOne($entityName, UsersMetaData::COL_EMAIL_ID, $email_id);
     }
 }
